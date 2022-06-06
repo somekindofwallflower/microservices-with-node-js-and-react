@@ -4,12 +4,21 @@
 ## 01. Fundamentals Ideas around Microservices.
 <br/>
 
-![Application](/img/pic_01_01.png?raw=true)
+### What is a Microservice?
+A microservice contains all the code required to make one feature work correctly.
+
+#### Monolithic Server
+
+![Application](/img/pic_01_04.png?raw=true)
 
 <br/>
 
-![Application](/img/pic_01_02.png?raw=true)
+![Application](/img/pic_01_05.png?raw=true)
 
-<br/>
+#### Single Microservice
 
-![Application](/img/pic_01_03.png?raw=true)
+![Application](/img/pic_01_06.png?raw=true)
+
+#### Microservices
+
+![Application](/img/pic_01_07.png?raw=true)
