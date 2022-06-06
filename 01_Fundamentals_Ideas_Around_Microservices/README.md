@@ -1,7 +1,7 @@
 
 # [Stephen Grider] Microservices with Node JS and React
 
-## 01. Fundamentals Ideas around Microservices.
+## 01. Fundamental Ideas around Microservices.
 <br/>
 
 ### What is a Microservice?
