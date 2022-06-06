@@ -47,3 +47,87 @@ Data management between services.
    </br>
    ![Application](/img/pic_01_11.png?raw=true)
 3) Some services might function more efficiently with different types of DB's (sql vs nosql)
+
+
+### Example - Basic E-commerce Application
+
+![Application](/img/pic_01_12.png?raw=true)
+
+The app has three simple functions
+1) Sign up
+2) List products
+3) Buy products
+
+<br/>
+   
+![Application](/img/pic_01_13.png?raw=true)
+
+#### Monolithic overview
+![Application](/img/pic_01_14.png?raw=true)
+
+#### Adding new feature 
+![Application](/img/pic_01_15.png?raw=true)
+
+#### Microservices overview
+![Application](/img/pic_01_16.png?raw=true)
+
+#### Adding new microservice
+![Application](/img/pic_01_17.png?raw=true)
+
+Communication Strategies Between Services
+1) Sync
+2) Async
+
+Attention: These words don't mean what they mean in JavaScript world!!!!
+
+![Application](/img/pic_01_18.png?raw=true)
+
+#### Applying sync communication strategy when adding Service D
+
+![Application](/img/pic_01_19.png?raw=true)
+<br/>
+
+<b>Pro and Cons of Sync Communication Strategy</b>
+<br/>
+![Application](/img/pic_01_20.png?raw=true)
+
+
+
+#### Applying async communication strategy when adding Service D
+
+1) First form of async communication <br/>
+![Application](/img/pic_01_21.png?raw=true)
+<br/>
+
+<b>Pro and Cons of Async Communication Strategy Method 1</b> <br/>
+![Application](/img/pic_01_22.png?raw=true)
+
+
+2) Second form of async communication.
+
+![Application](/img/pic_01_23.png?raw=true)
+<br/>
+Event Accours - product is created - event flows into the Event bus <br/>
+![Application](/img/pic_01_24.png?raw=true)
+<br/>
+Event bus takes the event and send it to any interested services <br/>
+![Application](/img/pic_01_25.png?raw=true)
+<br/>
+Service D takes the information and record that event by storing the product inside products table <br/>
+![Application](/img/pic_01_26.png?raw=true)
+<br/>
+User requests to sign up <br/>
+![Application](/img/pic_01_27.png?raw=true)
+<br/>
+Event bus takes the event and send to service D and service D takes the event and store user information in users table<br/>
+![Application](/img/pic_01_28.png?raw=true)
+<br/>
+Create order event. <br/>
+![Application](/img/pic_01_29.png?raw=true)
+
+Event bus takes the event and send to service D and service D takes the event and store order information in users table<br/>
+<br/>
+![Application](/img/pic_01_30.png?raw=true)
+
+<b>Pro and Cons of Async Communication Strategy Method 3</b> <br/>
+![Application](/img/pic_01_31.png?raw=true)
