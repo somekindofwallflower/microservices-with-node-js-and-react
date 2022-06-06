@@ -1,5 +1,5 @@
 
-# [Stephen Grider] Microservices with Node JS and React [ENG, 2022]
+# [Stephen Grider] Microservices with Node JS and React
 
 ## 01. Fundamentals Ideas around Microservices.
 <br/>
