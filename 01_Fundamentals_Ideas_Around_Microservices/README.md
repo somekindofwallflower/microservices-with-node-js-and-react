@@ -9,15 +9,15 @@ A microservice contains all the code required to make one feature work correctly
 
 #### Monolithic Server
 
-![Application](/img/pic_01_05.png?raw=true)
+![Application](/img/pic_01_04.png?raw=true)
 
 <br/>
 
-![Application](/img/pic_01_06.png?raw=true)
+![Application](/img/pic_01_05.png?raw=true)
 
 #### Single Microservice
 
-![Application](/img/pic_01_07.png?raw=true)
+![Application](/img/pic_01_06.png?raw=true)
 
 #### Microservices
 
